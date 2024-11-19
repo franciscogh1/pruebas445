@@ -1,0 +1,71 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  </head>
+  <body>
+  <div id= "copy">
+  <b>&copy; 2018 Big Rumor Industries</b>
+  </div>
+  <div id="searchBar">
+    <div id='header'>
+  <span id="headline"> NBA Player Info </span>
+  <img style="vertical-align:middle" id="logo" src="https://theundefeated.com/wp-content/uploads/2017/05/nba-logo.png"/>
+    </div>
+   <div id='searchInput'>
+  Search:<input onClick="this.select();" type="text" value="Search by Name or College" id='nameSearch'/>
+  <input type="submit" onclick="clik(document.getElementById('nameSearch').value)">
+    </div>
+   
+  </div>
+  <div id='dropdown'>
+    <div id='dropdown-content'>
+    </div>
+    </div>
+    
+    <div id='suggestions'>
+    </div>
+  <br><br>
+  <div id="criteria-search">
+  Or trying searching for players by a specific criterion:
+    <p>
+      <select id="criteria">
+        <option id="greaterHeight" value='>='>Height  &gt;= </option>
+        <option id ="lesserHeight" value='<='>Height  &lt;= </option>
+      </select>
+      <input id="feet-input">' 
+      <input id="inches-input">"
+      <input type="submit" onClick="criteriaSearch()">
+      
+    </p>
+  </div>
+  <br><br>
+  <div id="playerDisplay">
+    <img id="headshot"  />
+  <div id='info'></div>
+  
+  <div id="allInfo">
+    Jersey Number: <span id="num"></span>
+    <br>
+    Position: <span id='pos'></span>
+    <br>
+    Height: <span id='feet'></span>
+    <br>
+     College: <span id='college'></span>
+    <br>
+      
+    <div>
+  
+    </div>
+  </div>
+  </div>
+  
+  <div id='intro-popup'>
+      <button id='x-button'>x</button>
+    This NBA player information search draws player data from an external API. Please try searching for players by their first and/or last name, the college they attended or by height.
+  
+</div>
+
+
+<script src="index.js"></script>
+
+</body>
